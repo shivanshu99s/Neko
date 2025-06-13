@@ -1,13 +1,12 @@
-import React from 'react';
-import { FaUser } from 'react-icons/fa';
-
-const Profile = () => {
+export default function Profile() {
     return (
-        <div className="flex items-center gap-2 text-gray-800 font-medium">
-            Shivanshu
-            <FaUser className="text-purple-600" />
+        <div className="flex items-center gap-2 bg-white/30 backdrop-blur-md px-4 py-2 rounded-full shadow-md">
+            <img
+                src="https://api.dicebear.com/7.x/personas/svg?seed=Neko"
+                alt="Profile"
+                className="w-8 h-8 rounded-full"
+            />
+            <span className="text-sm font-semibold">Shivanshu</span>
         </div>
-    );
-};
-
-export default Profile;
+    )
+}
